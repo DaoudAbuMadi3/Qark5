@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>QARK | Security Report</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Orbitron:wght@700&display=swap');
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #0d0d0d;
+      color: #00ffcc;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(circle, rgba(0,255,204,0.08) 0%, transparent 80%);
+      animation: pulseBG 10s infinite alternate;
+      z-index: -1;
+    }
+
+    @keyframes pulseBG {
+      0% { transform: scale(1); opacity: 0.15; }
+      100% { transform: scale(1.2); opacity: 0.3; }
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .qark-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4em;
+      color: #00fff7;
+      letter-spacing: 8px;
+      animation: neonFlicker 2.5s infinite alternate;
+      text-shadow:
+        0 0 5px #00fff7,
+        0 0 10px #00fff7,
+        0 0 20px #00fff7,
+        0 0 40px #007fff,
+        0 0 80px #00fff7;
+    }
+
+    @keyframes neonFlicker {
+      0% { opacity: 1; }
+      100% { opacity: 0.85; }
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 1.4em;
+      color: #99ccff;
+      text-shadow: 0 0 10px rgba(0,255,204,0.3);
+    }
+
+    .android-icon {
+      width: 80px;
+      margin: 20px auto;
+      display: block;
+      filter: drop-shadow(0 0 15px #00ffcc);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .credits {
+      margin-top: 25px;
+      font-size: 1.1em;
+      color: #ffffffcc;
+      text-align: center;
+    }
+
+    .credit-label {
+      font-weight: bold;
+      color: #00ffcc;
+      font-size: 1.2em;
+      display: inline-block;
+      margin-bottom: 8px;
+      text-shadow: 0 0 8px #00ffcc88;
+    }
+
+    .credit-name {
+      font-family: 'Orbitron', sans-serif;
+      color: #99e6ff;
+      text-shadow: 0 0 5px #00e6e6, 0 0 10px #00e6e6;
+      margin: 0 6px;
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .credit-name:hover {
+      transform: scale(1.05) rotate(-1deg);
+      color: #ffffff;
+      text-shadow: 0 0 8px #00ffff, 0 0 12px #00aaff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .issue {
+      background: rgba(0, 255, 204, 0.07);
+      border: 1px solid #00ffcc33;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
+      backdrop-filter: blur(6px);
+      animation: fadeInUp 0.7s ease forwards;
+      opacity: 0;
+    }
+
+    .issue:nth-child(1) { animation-delay: 0.2s; }
+    .issue:nth-child(2) { animation-delay: 0.4s; }
+    .issue:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    .issue h2 {
+      color: #00ffcc;
+      margin-bottom: 10px;
+      font-size: 1.6em;
+      text-shadow: 0 0 10px #00ffcc88;
+    }
+
+    .description {
+      color: #eeeeee;
+      margin-bottom: 15px;
+      line-height: 1.8;
+      white-space: pre-line; /* 🔥 محترم لكل \n بدون تعديل نص */
+    }
+
+    .file-link {
+      color: #99ccff;
+      font-size: 0.95em;
+      margin-top: 10px;
+    }
+
+    .file-link a {
+      color: #66ffff;
+      text-decoration: none;
+    }
+
+    .file-link a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android" class="android-icon" />
+    <div class="qark-title">QARK</div>
+    <div class="subtitle">Quick Android Review Kit</div>
+    <div class="subtitle">APK Security Analysis Report</div>
+
+    <div class="credits">
+      <span class="credit-label">TOOL Developed by</span><br/>
+      <span class="credit-name">Jineen Abu Amr</span> · 
+      <span class="credit-name">Daoud Abu Madi</span> · 
+      <span class="credit-name">R7mah Alqur3an</span> · 
+      <span class="credit-name">3asem Alselwady</span>
+    </div>
+
+  </header>
+
+  <div class="container">
+    {% for issue in issues %}
+    <div class="issue">
+      <h2>{{ issue.severity.name }} - {{ issue.name }}</h2>
+      <div class="description">{{ issue.description | e }}</div>
+      {% if issue.file_object %}
+      <div class="file-link">
+        File:
+        <a href="file://{{ issue.file_object }}">
+          {{ issue.file_object }}{% if issue.line_number %}:{{ issue.line_number[0] }}:{{ issue.line_number[1] }}{% endif %}
+        </a>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+</body>
+</html>

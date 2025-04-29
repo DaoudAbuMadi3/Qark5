@@ -1,0 +1,19 @@
+git status        # للتحقق من حالة المستودع
+git add .         # إضافة الملفات الجديدة
+git commit -m "Add newfile.txt"   # عمل commit مع رسالة التغيير
+git push origin main  # رفع التغييرات إلى GitHub
+<<<<<<< HEAD
+=======
+
+
+<<<<<<< HEAD
+123
+>>>>>>> 6fb3c6f (updated)
+=======
+<<<<<<< HEAD
+123
+>>>>>>> 6fb3c6f (updated)
+=======
+yuyuyu
+>>>>>>> 222dd1d (update f1)
+>>>>>>> f8c5211 (final update)
