@@ -43,11 +43,12 @@ if you want to exit the virtual environment use the  ``deactivate``
 Installation on Windows :
 =======================
 in powershell execute this command in powershell :
-
-
 ```
 chcp 65001 and  $OutputEncoding = [System.Text.UTF8Encoding]::new() 
+```
 
+for crete and activate the virtual environment :
+```
 python3 -m venv env1
 ./env1/Scripts/Activate.ps1
 ```
@@ -64,7 +65,7 @@ https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
 
 Install the requirements and setup the tool :
 ```
-cd qark
+cd Qark5
 pip install -r requirements.txt
 pip install .
 ```
