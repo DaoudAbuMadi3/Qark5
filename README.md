@@ -23,7 +23,7 @@ Download the tool :
 git clone https://github.com/DaoudAbuMadi3/Qark5.git
 ```
 
-you must download manually the jadx tool in this path Qark5/qark/lib/ 
+You must download manually the jadx tool in this path Qark5/qark/lib/ 
 ```
 cd Qark5/qark/lib
 wget https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip 
@@ -42,17 +42,17 @@ pip install .
 ```
 qark --help
 ```
-if you want to exit the virtual environment use the  ``deactivate``
+If you want to exit the virtual environment use the  ``deactivate``
 
 
 Installation on Windows :
 =======================
-in powershell execute this command :
+In powershell execute this command :
 ```
 chcp 65001 and  $OutputEncoding = [System.Text.UTF8Encoding]::new() 
 ```
 
-for crete and activate the virtual environment :
+For crete and activate the virtual environment :
 ```
 python3 -m venv env1
 ./env1/Scripts/Activate.ps1
@@ -63,7 +63,7 @@ git clone https://github.com/DaoudAbuMadi3/Qark5.git
 
 ```
 
-you must download manually the jadx tool in this path Qark5/qark/lib/ then extract it :
+You must download manually the jadx tool in this path Qark5/qark/lib/ then extract it :
 ```
 https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
 ```
@@ -78,17 +78,18 @@ pip install .
 ```
 qark --help
 ```
-if you want to exit the virtual environment use the  ``deactivate``
+If you want to exit the virtual environment use the  ``deactivate``
 
 
 
 Usage
 =====
-For more options please see the ``--help`` command.
+For more options please Execute this command  ``qark --help`` .
 
-`` qark --analyze ``
+This command use for Static Analysis :
+`` qark --analyze `` 
 
-then select the extension of file ``.apk`` or ``.java`` then select the Absolute path of the file .  
+Then select the extension of file ``.apk`` or ``.java`` then select the Absolute path of the file .  
 
 Results
 =======
