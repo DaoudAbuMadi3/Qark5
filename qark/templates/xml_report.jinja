@@ -1,0 +1,34 @@
+from jinja2 import Environment, BaseLoader
+from datetime import datetime
+
+def generate_xml_report(issues, output_path=None):
+    template_str = """<?xml version="1.0" encoding="UTF-8"?>
+<report>
+{% for issue in issues %}
+  <issue issueid="{{ issue.id }}">
+    <severity>{{ issue.severity }}</severity>
+    <name>{{ issue.name }}</name>
+  </issue>
+{% endfor %}
+</report>
+"""
+
+    # إعداد Jinja2
+    env = Environment(loader=BaseLoader())
+    template = env.from_string(template_str)
+
+    # عرض القالب باستخدام البيانات الفعلية
+    rendered_xml = template.render(issues=issues)
+
+    # تحديد اسم الملف
+    if output_path is None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_path = f"report_{timestamp}.xml"
+
+    # حفظ التقرير
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(rendered_xml)
+
+    return output_path
+
+ 
