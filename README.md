@@ -12,11 +12,13 @@ Tested on Linux and Windows .
 Installation on Linux :
 =======================
 
+For crete and activate the virtual environment :
 ```
 python3 -m venv env1
 source env1/bin/activate
 ```
 
+Download the tool :
 ```
 git clone https://github.com/DaoudAbuMadi3/Qark5.git
 ```
@@ -29,7 +31,10 @@ mkdir jadx-1.5.1
 mv jadx-1.5.1.zip jadx-1.5.1
 cd jadx-1.5.1 
 unzip jadx-1.5.1.zip
+```
 
+Install the requirements and setup the tool :
+```
 cd ../../..
 pip install -r requirements.txt
 pip install .
@@ -42,7 +47,7 @@ if you want to exit the virtual environment use the  ``deactivate``
 
 Installation on Windows :
 =======================
-in powershell execute this command in powershell :
+in powershell execute this command :
 ```
 chcp 65001 and  $OutputEncoding = [System.Text.UTF8Encoding]::new() 
 ```
