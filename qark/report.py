@@ -9,7 +9,7 @@ from qark.utils import create_directories_to_path
 import logging
 
 DEFAULT_REPORT_PATH = path.join(path.dirname(path.realpath(__file__)), 'report', '')
-
+ 
 jinja_env = Environment(
     loader=PackageLoader('qark', 'templates'),
     autoescape=select_autoescape(['html', 'xml'])

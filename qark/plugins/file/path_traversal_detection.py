@@ -17,7 +17,7 @@ SENSITIVE_METHODS = {
     "FileReader",
     "new File",
 }
-
+ 
 SUSPICIOUS_NAMES = {"input", "path", "filename", "fileName", "filepath", "userFile"}
 
 STANDARD_ID = "MSTG-PLATFORM-5"

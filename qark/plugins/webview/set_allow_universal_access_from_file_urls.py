@@ -7,7 +7,7 @@ from javalang.tree import MethodInvocation
 from qark.issue import Issue, Severity
 from qark.plugins.webview.helpers import webview_default_vulnerable, valid_set_method_bool
 from qark.scanner.plugin import CoroutinePlugin, ManifestPlugin
-
+ 
 log = logging.getLogger(__name__)
 
 SET_ALLOW_UNIVERSAL_ACCESS_FROM_FILE_URLS_TEMPLATE = (

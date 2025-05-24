@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 
 JNI_LOAD_METHODS = {"loadLibrary", "load"}
 NATIVE_KEYWORDS = {"fopen", "fwrite", "fread", "open", "fclose", "unlink", "chmod"}
-
+ 
 class NativeFileAccessPlugin(CoroutinePlugin):
     def __init__(self):
         super().__init__(

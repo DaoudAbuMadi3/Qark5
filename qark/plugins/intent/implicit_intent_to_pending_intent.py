@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 
 PENDING_INTENT_METHODS = ("getActivity", "getActivities", "getService", "getBroadcast")
 PENDING_INTENT_REGEX = re.compile(r'\b({})\b'.format('|'.join(PENDING_INTENT_METHODS)))
-
+ 
 DESCRIPTION_TEMPLATE = (
     "Detected implicit Intent passed into PendingIntent.{method}. "
     "For security reasons, always use explicit Intent (with setClass or setComponent). "

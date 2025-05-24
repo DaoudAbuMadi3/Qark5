@@ -7,7 +7,7 @@ from javalang.tree import MethodInvocation
 from qark.issue import Issue, Severity
 from qark.plugins.webview.helpers import valid_set_method_bool
 from qark.scanner.plugin import CoroutinePlugin
-
+ 
 log = logging.getLogger(__name__)
 
 SET_DOM_STORAGE_ENABLED_TEMPLATE = (

@@ -23,7 +23,7 @@ class TempFileUsagePlugin(CoroutinePlugin):
             description="Detects creation of temporary or cache files that may be insecure."
         )
         self.severity = Severity.WARNING
-
+ 
     def run_coroutine(self):
         while True:
             _, node = (yield)

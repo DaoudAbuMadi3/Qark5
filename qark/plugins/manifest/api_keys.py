@@ -6,7 +6,7 @@ import logging
 import re
 from qark.issue import Severity, Issue
 from qark.scanner.plugin import ManifestPlugin
-
+ 
 log = logging.getLogger(__name__)
 
 API_KEY_DESCRIPTION_TEMPLATE = (

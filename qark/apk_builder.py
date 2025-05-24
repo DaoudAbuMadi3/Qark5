@@ -23,7 +23,7 @@ COMPONENT_ENTRIES = {
     "service": ("onCreate", "onBind", "onStartCommand", "onHandleIntent"),
     "provider": ("onReceive",)
 }
-
+ 
 EXPLOIT_APK_TEMPLATE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "exploit_apk")
 
 

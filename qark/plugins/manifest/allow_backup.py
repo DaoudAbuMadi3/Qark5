@@ -5,7 +5,7 @@
 from qark.scanner.plugin import ManifestPlugin
 from qark.issue import Severity, Issue
 import logging
-
+ 
 log = logging.getLogger(__name__)
 
 ALLOW_BACKUP_DESCRIPTION = (

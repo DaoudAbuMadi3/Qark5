@@ -8,7 +8,7 @@ from qark.scanner.plugin import ManifestPlugin
 from xml.etree import ElementTree as ET
 
 log = logging.getLogger(__name__)
-
+ 
 class DebuggableFlagPlugin(ManifestPlugin):
     def __init__(self):
         super().__init__(

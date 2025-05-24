@@ -8,7 +8,7 @@ from qark.issue import Severity, Issue
 from qark.scanner.plugin import CoroutinePlugin
 
 log = logging.getLogger(__name__)
-
+ 
 EXTERNAL_STORAGE_DESCRIPTION = (
     "Reading/writing files in {storage_location} is potentially vulnerable to data injection attacks. "
     "Other apps with WRITE_EXTERNAL_STORAGE permission may write to these files. "

@@ -9,7 +9,7 @@ from qark.scanner.plugin import CoroutinePlugin
 from qark.plugins.webview.helpers import valid_method_invocation
 
 log = logging.getLogger(__name__)
-
+ 
 LOAD_DATA_WITH_BASE_URL_DESCRIPTION_TEMPLATE = (
     "WebView '{webview_object}' calls loadDataWithBaseURL with base URL: {base_url}. "
     "This can be dangerous if the base URL is untrusted, because it allows JavaScript injection "

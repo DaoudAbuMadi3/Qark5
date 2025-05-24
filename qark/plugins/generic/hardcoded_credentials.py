@@ -7,7 +7,7 @@ import re
 from javalang.tree import Literal
 from qark.issue import Issue, Severity
 from qark.scanner.plugin import CoroutinePlugin
-
+ 
 log = logging.getLogger(__name__)
 
 # Keywords we search for in Strings

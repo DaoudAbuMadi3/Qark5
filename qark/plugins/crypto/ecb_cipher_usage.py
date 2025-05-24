@@ -1,7 +1,7 @@
 # ✅ OWASP Mobile Top 10: M6 (Insecure Cryptography)
 # ✅ MSTG-CRYPTO-2: Do not use ECB mode for encryption. Use CBC or GCM with IV instead.
 # This plugin detects usage of insecure cipher modes such as AES/ECB or DES/ECB.
-
+ 
 import logging
 import re
 import javalang

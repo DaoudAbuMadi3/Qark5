@@ -7,7 +7,7 @@ from qark.issue import Severity, Issue
 from qark.scanner.plugin import ManifestPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 TASK_REPARENTING_DESCRIPTION_TEMPLATE = (
     "Activity '{activity_name}' is configured with android:allowTaskReparenting='true'. "
     "This allows the activity to be reparented into another task with the same affinity, "

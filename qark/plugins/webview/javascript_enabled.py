@@ -7,7 +7,7 @@ from javalang.tree import MethodInvocation
 from qark.issue import Severity, Issue
 from qark.plugins.webview.helpers import valid_set_method_bool
 from qark.scanner.plugin import CoroutinePlugin
-
+ 
 log = logging.getLogger(__name__)
 
 JAVASCRIPT_ENABLED_DESCRIPTION_TEMPLATE = (

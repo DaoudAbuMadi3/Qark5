@@ -10,7 +10,7 @@ from qark.utils import is_java_file
 log = logging.getLogger(__name__)
 
 PLUGIN_CATEGORIES = ("manifest", "broadcast", "file", "crypto", "intent", "cert", "webview", "generic")
-
+ 
 class Scanner(object):
     def __init__(self, manifest_path, path_to_source):
         self.files = set()

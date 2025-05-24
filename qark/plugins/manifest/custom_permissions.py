@@ -7,7 +7,7 @@ import logging
 from qark.issue import Severity, Issue
 
 log = logging.getLogger(__name__)
-
+ 
 SIGNATURE_OR_SYSTEM_DESCRIPTION = (
     "Permission uses 'signatureOrSystem', which is insecure on Android < 10 (API < 29). "
     "On older systems, apps signed by different keys but in /system can gain this permission. "

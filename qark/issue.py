@@ -5,7 +5,7 @@ from json import JSONEncoder, dumps
 
 log = logging.getLogger(__name__)
 
-
+ 
 class Issue:
     def __init__(self, category, name, severity, description,
                  line_number=None, file_object=None, apk_exploit_dict=None,

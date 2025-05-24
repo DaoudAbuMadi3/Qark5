@@ -8,7 +8,7 @@ from qark.plugins.webview.helpers import webview_default_vulnerable
 from qark.scanner.plugin import JavaASTPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 SET_ALLOW_CONTENT_ACCESS_DESCRIPTION_TEMPLATE = (
     "WebView '{webview_object}' does not explicitly disable content provider access "
     "(setAllowContentAccess(false) was not called). If the WebView loads untrusted input, "

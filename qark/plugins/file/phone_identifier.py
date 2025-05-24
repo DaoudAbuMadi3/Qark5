@@ -19,7 +19,7 @@ SENSITIVE_METHODS = ["getLine1Number", "getDeviceId", "getImei", "getSubscriberI
 TELEPHONY_MANAGER_VARIABLE_NAMES_REGEX = re.compile(
     r'(android\.telephony\.)?TelephonyManager\s+(\w+)\s*[=;)]'
 )
-
+ 
 INLINE_USAGE_REGEX = re.compile(
     r'\({2,}(android\.telephony\.)?TelephonyManager\)\w*\.getSystemService\(["\']phone["\']\){2,}\.(' + "|".join(SENSITIVE_METHODS) + r')'
 )

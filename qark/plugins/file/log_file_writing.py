@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 
 LOG_FILE_REGEX = re.compile(r"(log|debug).*\.txt", re.IGNORECASE)
 WRITE_METHODS = {"FileOutputStream", "BufferedWriter", "PrintWriter", "FileWriter"}
-
+ 
 class LogFileWritingPlugin(CoroutinePlugin):
     def __init__(self):
         super().__init__(

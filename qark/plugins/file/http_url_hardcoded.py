@@ -10,7 +10,7 @@ from qark.utils import is_java_file
 from qark.scanner.plugin import FileContentsPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 HARDCODED_HTTP_DESCRIPTION = (
     "Application contains hardcoded HTTP URL: {http_url}. Unless HSTS is implemented, "
     "this request can be intercepted and modified by a man-in-the-middle attack."

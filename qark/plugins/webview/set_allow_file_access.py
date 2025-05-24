@@ -8,7 +8,7 @@ from qark.plugins.webview.helpers import webview_default_vulnerable
 from qark.scanner.plugin import JavaASTPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 SET_ALLOW_FILE_ACCESS_DESCRIPTION_TEMPLATE = (
     "WebView '{webview_object}' does not explicitly disable file access "
     "(setAllowFileAccess(false) was not called). If the WebView loads untrusted input, "

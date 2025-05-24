@@ -8,7 +8,7 @@ from qark.issue import Issue, Severity
 from qark.scanner.plugin import CoroutinePlugin
 
 log = logging.getLogger(__name__)
-
+ 
 UNENCRYPTED_APIS = {
     "FileOutputStream",
     "openFileOutput",

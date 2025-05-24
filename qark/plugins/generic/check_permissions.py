@@ -9,7 +9,7 @@ from qark.issue import Severity, Issue
 from qark.scanner.plugin import JavaASTPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 CHECK_PERMISSIONS_DESCRIPTION = (
     "Use of {method_name} may expose app to Privilege Escalation or Confused Deputy attack. "
     "Consider replacing with {recommended_permission}CallingPermission for stricter security. "

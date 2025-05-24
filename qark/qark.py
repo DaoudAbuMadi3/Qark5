@@ -9,7 +9,7 @@ DEBUG_LOG_PATH = os.path.join(os.getcwd(), "qark_debug.log")
 
 logger = logging.getLogger(__name__)
 QARK_VERSION = "5"
-
+ 
 def print_banner():
     banner = r"""
  .d88888b.         d8888 8888888b.  888    d8P  

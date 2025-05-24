@@ -7,7 +7,7 @@ from qark.issue import Severity, Issue
 from qark.scanner.plugin import ManifestPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 TASK_LAUNCH_MODE_DESCRIPTION_TEMPLATE = (
     "Activity '{activity_name}' is configured with launchMode='singleTask'. "
     "This can lead to Task Poisoning if an attacker manipulates task affinity. "

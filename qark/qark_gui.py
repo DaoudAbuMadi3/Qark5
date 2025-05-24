@@ -9,7 +9,7 @@ import subprocess
 import sys
 import os
 import random
-
+ 
 
 # Welcome window with effects
 class SplashScreen(QWidget):

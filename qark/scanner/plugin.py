@@ -13,7 +13,7 @@ log = logging.getLogger(__name__)
 
 plugin_base = PluginBase(package="qark.custom_plugins")
 BLACKLISTED_PLUGIN_MODULES = {"helpers"}
-
+ 
 def get_plugin_source(category=None):
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "plugins")
     if category:

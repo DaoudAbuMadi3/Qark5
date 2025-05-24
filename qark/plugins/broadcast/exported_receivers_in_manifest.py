@@ -4,7 +4,7 @@ from qark.issue import Issue, Severity
 from qark.scanner.plugin import ManifestPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 STANDARD_ID = "MSTG-PLATFORM-10"
 STANDARD_DESCRIPTION = (
     "Exported components without proper permissions allow unauthorized apps to interact with app internals."

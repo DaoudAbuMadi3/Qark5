@@ -4,7 +4,7 @@
 
 import logging
 from javalang.tree import ClassCreator, MethodInvocation, MethodDeclaration, Literal, ReturnStatement
-
+ 
 from qark.issue import Issue, Severity
 from qark.scanner.plugin import CoroutinePlugin
 

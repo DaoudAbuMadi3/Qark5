@@ -11,7 +11,7 @@ from qark.scanner.plugin import CoroutinePlugin
 log = logging.getLogger(__name__)
 
 FILE_URI_PATTERN = re.compile(r'file://', re.IGNORECASE)
-
+ 
 class FileUriExposurePlugin(CoroutinePlugin):
     def __init__(self):
         super().__init__(

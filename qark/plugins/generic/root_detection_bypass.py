@@ -9,7 +9,7 @@ from qark.issue import Issue, Severity
 from qark.scanner.plugin import CoroutinePlugin
 
 log = logging.getLogger(__name__)
-
+ 
 # Weak root detection indicators
 ROOT_PATTERNS = [
     r"/system/bin/su",

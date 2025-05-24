@@ -6,7 +6,7 @@ import logging
 from qark.issue import Issue, Severity
 from qark.plugins.manifest_helpers import get_min_sdk
 from qark.scanner.plugin import ManifestPlugin
-
+ 
 log = logging.getLogger(__name__)
 
 TAP_JACKING_TEMPLATE = (

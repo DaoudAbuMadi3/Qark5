@@ -8,7 +8,7 @@ from qark.plugins.helpers import valid_method_invocation
 from qark.scanner.plugin import CoroutinePlugin, ManifestPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 ADD_JAVASCRIPT_INTERFACE_DESCRIPTION_TEMPLATE = (
     "WebView '{webview_object}' uses addJavascriptInterface in an app targeting minSdkVersion={min_sdk} (API < 17). "
     "This exposes all public Java methods to JavaScript running in the WebView, which may lead to remote code execution "

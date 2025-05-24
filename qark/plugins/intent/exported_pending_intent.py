@@ -9,7 +9,7 @@ from qark.scanner.plugin import CoroutinePlugin
 from xml.etree import ElementTree as ET
 
 log = logging.getLogger(__name__)
-
+ 
 PENDING_INTENT_METHODS = {
     "getActivity",
     "getBroadcast",

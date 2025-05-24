@@ -9,7 +9,7 @@ from qark.plugins.manifest_helpers import get_min_sdk
 from qark.utils import is_java_file
 
 log = logging.getLogger(__name__)
-
+ 
 EXCLUDE_REGEXES = (
     r'^\s*(//|/\*)',
     r'^\s*\*',

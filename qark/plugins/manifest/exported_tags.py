@@ -6,7 +6,7 @@ from qark.plugins.manifest_helpers import get_min_sdk, get_target_sdk, get_packa
 from qark.plugins.helpers import java_files_from_files
 from qark.scanner.plugin import ManifestPlugin
 from qark.issue import Severity, Issue
-
+ 
 import os
 import logging
 from typing import Dict, List, Optional, Set

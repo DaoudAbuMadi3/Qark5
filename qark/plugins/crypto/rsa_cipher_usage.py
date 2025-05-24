@@ -1,7 +1,7 @@
 # ✅ OWASP Mobile Top 10: M6 (Insecure Cryptography)
 # ✅ MSTG-CRYPTO-3: RSA must not be used without padding. Use RSA/ECB/OAEPWithSHA-256AndMGF1Padding instead.
 # This plugin detects use of RSA with NoPadding, which is vulnerable to plaintext recovery attacks.
-
+ 
 import logging
 import re
 import javalang

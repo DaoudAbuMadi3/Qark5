@@ -1,7 +1,7 @@
 # ✅ OWASP Mobile Top 10: M1 (Improper Platform Usage)
 # ✅ MSTG-PLATFORM-5: When exposing ContentProviders, path matching should be precise.
 # This plugin detects usage of android:path, pathPattern, or pathPrefix that may cause mismatches.
-
+ 
 import logging
 from qark.issue import Severity, Issue
 from qark.scanner.plugin import ManifestPlugin

@@ -3,7 +3,7 @@
 # Description:
 # Dynamically registered broadcast receivers without proper permissions can be abused by malicious apps to inject data,
 # trigger actions, or escalate privileges. Always restrict dynamic receivers using strong permissions.
-
+ 
 import logging
 from javalang.tree import MethodInvocation
 from qark.issue import Issue, Severity

@@ -10,7 +10,7 @@ from qark.scanner.plugin import CoroutinePlugin
 log = logging.getLogger(__name__)
 
 REDIRECT_TARGETS = {"startActivity", "startService", "startForegroundService"}
-
+ 
 class IntentRedirectionPlugin(CoroutinePlugin):
     def __init__(self):
         super().__init__(

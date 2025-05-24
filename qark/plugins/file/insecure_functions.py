@@ -14,7 +14,7 @@ INSECURE_FUNCTIONS_DESCRIPTION = (
     "Developers must manually enforce permissions inside this method. Failure to do so can lead to unauthorized access. "
     "Reference: https://developer.android.com/reference/android/content/ContentProvider#call(java.lang.String,%20java.lang.String,%20android.os.Bundle)"
 )
-
+ 
 INSECURE_FUNCTIONS_NAMES = {"call"}
 SECURITY_CHECK_METHODS = {"checkCallingPermission", "enforceCallingPermission"}
 

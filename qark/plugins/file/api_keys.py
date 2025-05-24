@@ -8,7 +8,7 @@ from qark.issue import Severity, Issue
 from qark.scanner.plugin import FileContentsPlugin
 
 log = logging.getLogger(__name__)
-
+ 
 BLACKLISTED_EXTENSIONS = {".apk", ".dex", ".png", ".jar"}
 
 API_KEY_PATTERNS = [

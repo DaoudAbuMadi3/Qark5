@@ -6,7 +6,7 @@ import logging
 from javalang.tree import MethodInvocation
 from qark.issue import Severity, Issue
 from qark.scanner.plugin import CoroutinePlugin
-
+ 
 log = logging.getLogger(__name__)
 
 ANDROID_LOGGING_DESCRIPTION = (

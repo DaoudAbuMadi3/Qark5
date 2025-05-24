@@ -1,7 +1,7 @@
 # OWASP Reference:
 # ⚠️ OWASP Mobile Top 10 - M1 (Improper Platform Usage)
 # Description: Sending broadcasts without proper permission exposes the app to unauthorized access, interception, or injection.
-
+ 
 import logging
 import re
 import javalang

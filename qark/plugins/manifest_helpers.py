@@ -6,7 +6,7 @@ import re
 from qark.xml_helpers import get_manifest_out_of_files
 
 log = logging.getLogger(__name__)
-
+ 
 def get_package_from_manifest(manifest_path):
     """
     Get package name from AndroidManifest.xml.

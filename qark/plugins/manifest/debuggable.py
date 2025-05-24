@@ -7,7 +7,7 @@ from qark.issue import Severity, Issue
 import logging
 
 log = logging.getLogger(__name__)
-
+ 
 DEBUGGABLE_DESCRIPTION = (
     "The android:debuggable flag is manually set to 'true' in the AndroidManifest.xml. "
     "This will cause the application to be debuggable in production builds, exposing it to security risks such as "

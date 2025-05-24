@@ -1,7 +1,7 @@
 # ✅ OWASP Mobile Top 10: M6 (Insecure Cryptography)
 # ✅ MSTG-CRYPTO-4: Do not use fixed seeds with SecureRandom. Always rely on system entropy.
 # This plugin detects calls to setSeed() or constructor-based seeding of SecureRandom.
-
+ 
 import logging
 import javalang
 from qark.issue import Severity, Issue

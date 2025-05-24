@@ -6,7 +6,7 @@ import logging
 from javalang.tree import MethodDeclaration, MethodInvocation, ReturnStatement, Literal
 from qark.issue import Issue, Severity
 from qark.scanner.plugin import CoroutinePlugin
-
+ 
 log = logging.getLogger(__name__)
 
 CERT_METHODS = {"checkServerTrusted", "onReceivedSslError"}

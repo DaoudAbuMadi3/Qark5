@@ -13,7 +13,7 @@ log = logging.getLogger(__name__)
 TASK_AFFINITY_DESCRIPTION = (
     "Usage of {flag_name} may allow Task Hijacking vulnerability. "
     "Reference: https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-ren-chuangang.pdf"
-)
+) 
 
 TASK_FLAGS = {
     "FLAG_ACTIVITY_NEW_TASK",

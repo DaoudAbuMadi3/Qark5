@@ -10,7 +10,7 @@ STANDARD_ID = "MSTG-STORAGE-3"
 STANDARD_DESCRIPTION = (
     "Files must be created with the least privilege. Avoid MODE_WORLD_READABLE or global access."
 )
-
+ 
 PERMISSION_PATTERNS = {
     re.compile(r"MODE_WORLD_READABLE"): "World readable file found. Any application or file browser can access and read this file.",
     re.compile(r"MODE_WORLD_WRITEABLE"): "World writable file found. Any application or file browser can write to this file.",

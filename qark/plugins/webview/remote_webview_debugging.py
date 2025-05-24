@@ -9,7 +9,7 @@ from qark.plugins.webview.helpers import valid_set_method_bool
 from qark.scanner.plugin import CoroutinePlugin
 
 log = logging.getLogger(__name__)
-
+ 
 JAVASCRIPT_REMOTE_DEBUGGING_TEMPLATE = (
     "WebView '{webview_object}' enables remote debugging via setWebContentsDebuggingEnabled(true). "
     "This exposes the WebView to debugging from connected debuggers, which may allow access to JavaScript context, sensitive data, and application internals. "

@@ -22,7 +22,7 @@ class SharedFileLeakPlugin(CoroutinePlugin):
             description="Detects unsafe file sharing via intents or URIs without secure configuration."
         )
         self.severity = Severity.VULNERABILITY
-
+ 
     def run_coroutine(self):
         while True:
             _, node = (yield)

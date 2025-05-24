@@ -8,7 +8,7 @@ def create_directories_to_path(path):
     except Exception:
         # directory already exists
         pass
-
+ 
 def file_has_extension(extension, file_path):
     file_path = str(file_path).lower()  # Ensure file_path is a string before calling .lower()
     return os.path.splitext(file_path)[1] == extension.lower()

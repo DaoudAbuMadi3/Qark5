@@ -1,7 +1,7 @@
 # ✅ OWASP Mobile Top 10: M6 (Insecure Cryptography)
 # ✅ MSTG-CRYPTO-6: Private keys must never be stored or embedded in the application.
 # This plugin detects embedded private key materials (RSA/DSA/EC) in app files.
-
+ 
 import logging
 import re
 from qark.issue import Severity, Issue

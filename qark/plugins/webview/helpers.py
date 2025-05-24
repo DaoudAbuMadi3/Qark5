@@ -7,7 +7,7 @@ from qark.plugins.helpers import valid_method_invocation, remove_dict_entry_by_v
 log = logging.getLogger(__name__)
 
 CATEGORY = "webview"
-
+ 
 def valid_set_method_bool(method_invocation, str_bool, method_name="setAllowFileAccess"):
     """
     Checks if method_invocation is a call to `method_name` with a boolean argument of `str_bool`.

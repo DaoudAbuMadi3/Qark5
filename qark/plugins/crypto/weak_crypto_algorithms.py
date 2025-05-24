@@ -1,7 +1,7 @@
 # ✅ OWASP Mobile Top 10: M6 (Insecure Cryptography)
 # ✅ MSTG-CRYPTO-1: Use only strong cryptographic primitives (e.g., AES-GCM, SHA-256).
 # This plugin detects weak algorithms, unsafe modes, and hardcoded secrets.
-
+ 
 import logging
 import re
 import javalang
