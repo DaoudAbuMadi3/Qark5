@@ -52,16 +52,17 @@ python3 -m venv env1
 ./env1/Scripts/Activate.ps1
 ```
 Download the tool :
--------------------
 ```
 git clone https://github.com/DaoudAbuMadi3/Qark5.git
 
 ```
 
-you must download manually the jadx tool in this path Qark5/qark/lib/ 
+you must download manually the jadx tool in this path Qark5/qark/lib/ then extract it :
 ```
 https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
 ```
+
+Install the requirements and setup the tool :
 ```
 cd qark
 pip install -r requirements.txt
