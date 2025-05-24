@@ -51,12 +51,18 @@ chcp 65001 and  $OutputEncoding = [System.Text.UTF8Encoding]::new()
 python3 -m venv env1
 ./env1/Scripts/Activate.ps1
 ```
-you must download manually the jadx tool in this path Qark5/qark/lib/ 
-```
-https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip 
-```
+Download the tool :
+-------------------
 ```
 git clone https://github.com/DaoudAbuMadi3/Qark5.git
+
+```
+
+you must download manually the jadx tool in this path Qark5/qark/lib/ 
+```
+https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
+```
+```
 cd qark
 pip install -r requirements.txt
 pip install .
