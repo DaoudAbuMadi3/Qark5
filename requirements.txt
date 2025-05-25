@@ -8,6 +8,5 @@ setuptools>=69.0.3
 typing-extensions>=4.10.0
 xmltodict>=0.13.0
 lxml>=5.1.0
-
 PyQt5
 
