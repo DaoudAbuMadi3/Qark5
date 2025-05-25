@@ -65,7 +65,7 @@ class Issue:
 
     def __hash__(self):
         return hash((self.name, self.file_object, self.line_number))
-
+ 
 
 class Severity(Enum):
     INFO = 0
