@@ -1,4 +1,5 @@
 from os import path
+import os
 from datetime import datetime
 
 from jinja2 import Environment, PackageLoader, select_autoescape, Template
@@ -8,7 +9,14 @@ from qark.utils import create_directories_to_path
 
 import logging
 
-DEFAULT_REPORT_PATH = path.join(path.dirname(path.realpath(__file__)), 'report', '')
+# تحديد المسار للتقرير - يعمل على Windows و Linux
+# البحث عن مجلد Qark5 في Desktop للمستخدم الحالي
+user_home = os.path.expanduser("~")
+desktop_path = os.path.join(user_home, "OneDrive", "Desktop")  # Windows
+if not os.path.exists(desktop_path):
+    desktop_path = os.path.join(user_home, "Desktop")  # Linux/Mac
+
+DEFAULT_REPORT_PATH = os.path.join(desktop_path, "Qark5", "qark", "report")
  
 jinja_env = Environment(
     loader=PackageLoader('qark', 'templates'),
