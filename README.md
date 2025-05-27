@@ -1,8 +1,8 @@
 # QARK5 - Quick Android Review Kit 🛡️
-[![QARK5 Logo](https://user-images.githubusercontent.com/46517096/166974368-9798f39f-1f46-499c-b14e-81f0a3f83a06.png)](https://github.com/DaoudAbuMadi3/Qark5)
-
-[![GitHub Stars](https://img.shields.io/github/stars/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/DaoudAbuMadi3/Qark5?style=plastic)](https://github.com/DaoudAbuMadi3/Qark5/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/DaoudAbuMadi3/Qark5?style=plastic)](https://github.com/DaoudAbuMadi3/Qark5/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/DaoudAbuMadi3/Qark5?style=plastic)](https://github.com/DaoudAbuMadi3/Qark5/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/DaoudAbuMadi3/Qark5?style=plastic)](https://github.com/DaoudAbuMadi3/Qark5/pulls)
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
