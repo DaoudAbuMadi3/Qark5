@@ -51,7 +51,9 @@ These instructions will get you a copy of the project up and running on your loc
 🔍 Jadx decompiler (version 1.5.1)
 
 
-## Installation
+## Installation  
+[Installation ](#installation)
+
 ### Linux Installation
 ```bash
 # Create and activate virtual environment
@@ -119,8 +121,6 @@ qark --analyze
 
 
 
-## Installation
-[Installation instructions are above](#installation)
 
 ## Results
 📊 A report is generated in HTML and CSV format, which can be selected through the `--report-type` flag.
