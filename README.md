@@ -1,7 +1,11 @@
-[![QARK5 - Quick Android Review Kit 🛡️](https://capsule-render.vercel.app/api?text=QARK5%20Architecture&animation=fadeIn&type=waving&color=gradient&height=100)](https://github.com/DaoudAbuMadi3/Qark5)
+Quick Android Review Kit 🛡️
+===========================
+[![QARK5 - Quick Android Review Kit 🛡️](https://capsule-render.vercel.app/api?text=QARK5%20Architectur&animation=fadeIn&type=waving&color=gradient&height=100)](https://github.com/DaoudAbuMadi3/Qark5)
 
 ## About the Project
 🌟 QARK5 is an enhanced version of the Quick Android Review Kit, designed to identify security vulnerabilities in Android applications. This tool analyzes both source code and compiled applications (APKs), generating executable Proof-of-Crisis (PoC) tools and/or ADB commands. Unlike traditional security tools, QARK5 runs on unrooted devices, focusing on vulnerabilities that can be exploited under normal conditions. 🚀
+
+
 
 
 [![QARK5 - Mobile Pentesting Tool](https://github.com/DaoudAbuMadi3/Qark5/blob/main/docs/System_Arch.png
@@ -14,7 +18,6 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.11](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![OS: Linux + Windows](https://img.shields.io/badge/OS-Linux%20%2B%20Windows-blue.svg)](https://github.com/DaoudAbuMadi3/Qark5#installation)
 
