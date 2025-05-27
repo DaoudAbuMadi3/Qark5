@@ -40,14 +40,10 @@
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
 
-### Prerequisites
-🔧 Python 3.11
-🖥️ Linux or Windows operating system
-📦 Virtual environment
-🔍 Jadx decompiler (version 1.5.1)
 
-### Installation
-#### Linux Installation
+
+## Installation
+### Linux Installation
 ```bash
 # Create and activate virtual environment
 python3 -m venv env1
@@ -70,7 +66,7 @@ pip install -r requirements.txt
 pip install .
 ```
 
-#### Windows Installation
+### Windows Installation
 ```bash
 # Set encoding in PowerShell
 chcp 65001
@@ -173,5 +169,3 @@ You may obtain a copy of the License `here <http://www.apache.org/licenses/LICEN
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 ---
-
-[![Snake animation](https://github.com/DaoudAbuMadi3/Qark5/blob/output/github-contribution-grid-snake.svg)](https://github.com/DaoudAbuMadi3/Qark5)
