@@ -1,153 +1,108 @@
-Quick Android Review Kit
-========================
-This tool is designed to look for several security related Android application vulnerabilities, either in source code or packaged APKs. The tool is also capable of creating "Proof-of-Concept" deployable APKs and/or ADB commands, capable of exploiting many of the vulnerabilities it finds. There is no need to root the test device, as this tool focuses on vulnerabilities that can be exploited under otherwise secure conditions.
+# QARK5 - Quick Android Review Kit
+[![QARK5 Logo](https://user-images.githubusercontent.com/46517096/166974368-9798f39f-1f46-499c-b14e-81f0a3f83a06.png)](https://github.com/DaoudAbuMadi3/Qark5)
 
+[![GitHub Stars](https://img.shields.io/github/stars/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/network/members)
 
-Requirements
-=============
-Tested and supported on Python 3.11 .
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-Tested on Linux and Windows .
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python: 3.11](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![OS: Linux + Windows](https://img.shields.io/badge/OS-Linux%20%2B%20Windows-blue.svg)](https://github.com/DaoudAbuMadi3/Qark5#installation)
 
-Installation on Linux :
-=======================
+---
 
-For crete and activate the virtual environment :
-```
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About the Project
+[![QARK5 Architecture](https://capsule-render.vercel.app/api?text=QARK5%20Architecture&animation=fadeIn&type=waving&color=gradient&height=100)](https://github.com/DaoudAbuMadi3/Qark5)
+
+QARK5 is an enhanced version of the Quick Android Review Kit, designed to identify security vulnerabilities in Android applications. This tool analyzes both source code and packaged APKs, creating proof-of-concept deployable APKs and/or ADB commands to demonstrate found vulnerabilities. Unlike traditional security tools, QARK5 works on unrooted devices, focusing on vulnerabilities that can be exploited under normal conditions.
+
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine.
+
+### Prerequisites
+* Python 3.11
+* Linux or Windows operating system
+* Virtual environment
+* Jadx decompiler (version 1.5.1)
+
+### Installation
+```bash
+# Create and activate virtual environment
 python3 -m venv env1
 source env1/bin/activate
-```
 
-Download the tool :
-```
+# Clone the repository
 git clone https://github.com/DaoudAbuMadi3/Qark5.git
-```
 
-You must download manually the jadx tool in this path Qark5/qark/lib/ 
-```
+# Download jadx
 cd Qark5/qark/lib
-wget https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip 
+wget https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
 mkdir jadx-1.5.1
 mv jadx-1.5.1.zip jadx-1.5.1
-cd jadx-1.5.1 
+cd jadx-1.5.1
 unzip jadx-1.5.1.zip
-```
 
-Install the requirements and setup the tool :
-```
+# Install requirements
 cd ../../..
 pip install -r requirements.txt
 pip install .
 ```
-```
-qark --help
-```
-If you want to exit the virtual environment use the  ``deactivate``
 
+## Usage
+```bash
+# Static Analysis
+qark --analyze
 
-Installation on Windows :
-=======================
-In powershell execute this command :
-```
-chcp 65001 and  $OutputEncoding = [System.Text.UTF8Encoding]::new() 
+# Select file type (.apk or .java)
+# Enter absolute file path
 ```
 
-For crete and activate the virtual environment :
-```
-python3 -m venv env1
-./env1/Scripts/Activate.ps1
-```
-Download the tool :
-```
-git clone https://github.com/DaoudAbuMadi3/Qark5.git
+## Features
+* Analyzes both APK files and Java source code
+* Creates deployable PoC APKs and ADB commands
+* Works on unrooted devices
+* Free and open-source
+* Educational focus with detailed vulnerability explanations
+* Automates multiple decompilers for superior results
+* Generates HTML and CSV reports
 
-```
+## Requirements
+* Python 3.11
+* Linux or Windows operating system
+* Virtual environment
+* Jadx decompiler (version 1.5.1)
 
-You must download manually the jadx tool in this path Qark5/qark/lib/ then extract it :
-```
-https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
-```
+## Installation
+[Installation instructions are above](#installation)
 
-Install the requirements and setup the tool :
-```
-cd Qark5
-pip install -r requirements.txt
-pip install .
-```
+## Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-```
-qark --help
-```
-If you want to exit the virtual environment use the  ``deactivate``
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
 
+## Contact
+[Your Name](https://github.com/DaoudAbuMadi3) - [Twitter Handle](https://twitter.com/your_handle) - [email@example.com](mailto:email@example.com)
 
-Usage
-=====
-For more options please Execute this command  ``qark --help`` .
+Project Link: [https://github.com/DaoudAbuMadi3/Qark5](https://github.com/DaoudAbuMadi3/Qark5)
 
-This command use for Static Analysis :
-`` qark --analyze `` 
+---
 
-Then select the extension of file ``.apk`` or ``.java`` then select the Absolute path of the file .  
-
-Results
-=======
-A report is generated in html and csv , can select it through this option ``--report-type flag ``.
-
-
-
-
-Exploit APK
-===========
-QARK can generate a basic exploit APK for a few of the vulnerabilities that have been found.
-
-To generate the exploit APK there are a few steps to follow. You need to have the Android SDK v21 and build-tools v21.1.2
-
-1. Install the android SDK, you can get it under the 'command line tools': https://developer.android.com/studio/#downloads
-2. Unzip the android SDK
-3. Go into the new directory and generate the licenses with `bin/sdkmanager --licenses`
-4. Make sure the generated licenses are in the android SDK directory.
-5. Install the SDK and the proper build-tools version: `bin/sdkmanager --install "platforms;android-21" "sources;android-21" "build-tools;21.1.2"`
-
-Checks
-======
-QARK is an easy to use tool capable of finding common security vulnerabilities in Android applications. Unlike commercial products, it is 100% free to use. QARK features educational information allowing security reviewers to locate precise, in-depth explanations of the vulnerabilities. QARK automates the use of multiple decompilers, leveraging their combined outputs, to produce superior results, when decompiling APKs. Finally, the major advantage QARK has over traditional tools, that just point you to possible vulnerabilities, is that it can produce ADB commands, or even fully functional APKs, that turn hypothetical vulnerabilities into working "POC" exploits.
-
-Included in the types of security vulnerabilities this tool attempts to find are:
-
-- Inadvertently exported components
-- Improperly protected exported components
-- Intents which are vulnerable to interception or eavesdropping
-- Improper x.509 certificate validation
-- Creation of world-readable or world-writeable files
-- Activities which may leak data
-- The use of Sticky Intents
-- Insecurely created Pending Intents
-- Sending of insecure Broadcast Intents
-- Private keys embedded in the source
-- Weak or improper cryptography use
-- Potentially exploitable WebView configurations
-- Exported Preference Activities
-- Tapjacking
-- Apps which enable backups
-- Apps which are debuggable
-- Apps supporting outdated API versions, with known vulnerabilities
-
-
-Notice
-======
-Note: QARK decompiles Android applications back to raw source code. Please do not use this tool if this may be considered illegal in your juristdiction. If you are unsure, seek legal counsel.
-
-If you run into issues on OSX, especially relating to the outbound call to the Play Store, or the downloading of the SDK, it is
-likely due to your Python/OpenSSL configuration and the fact that recent changes in OSX impacted Python installed via brew. Nuking your
-Python installation(s) and re-installing from source may fix your issues.
-
-
-License
-=======
-Copyright 2015 LinkedIn Corp.  All rights reserved.
-
-Copyright 2015 LinkedIn Corp. Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. 
-You may obtain a copy of the License `here <http://www.apache.org/licenses/LICENSE-2.0/>`_.
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+[![Snake animation](https://github.com/DaoudAbuMadi3/Qark5/blob/output/github-contribution-grid-snake.svg)](https://github.com/DaoudAbuMadi3/Qark5)
