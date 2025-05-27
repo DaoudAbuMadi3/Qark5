@@ -6,13 +6,7 @@ Quick Android Review Kit 🛡️
 
 
 
-[![GitHub Stars](https://img.shields.io/github/stars/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/network/members)
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-
-[![Python: 3.11](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
-[![OS: Linux + Windows](https://img.shields.io/badge/OS-Linux%20%2B%20Windows-blue.svg)](https://github.com/DaoudAbuMadi3/Qark5#installation)
 
 ---
 
