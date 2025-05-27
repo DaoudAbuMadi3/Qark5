@@ -24,9 +24,9 @@ Y88b.Y8b88P  d8888888888 888  T88b  888   Y88b
 
         🔍 Quick Android Review Kit version-5
 Developed by
-	3asem Alselwady . 
-	Jineen Abu Amr  · 
+	Jineen Abu Amr  . 
 	Daoud Abu Madi  · 
+	3asem Alselwady · 
 	R7mah Alqur3an  · 
 """
     click.secho(banner, fg="bright_blue", bold=True)
