@@ -1,6 +1,6 @@
 Quick Android Review Kit 🛡️
 ===========================
-[![Quick Android Review Kit 🛡️](https://capsule-render.vercel.app/api?text=Quick%20Android%20Review%20Kit%20🛡️&animation=fadeIn&type=waving&color=gradient&height=100)](https://github.com/DaoudAbuMadi3/Qark5)
+[![Quick Android Review Kit 🛡️](https://capsule-render.vercel.app/api?text=Quick%20Android%20Review%20Kit&animation=fadeIn&type=waving&color=gradient&height=100)](https://github.com/DaoudAbuMadi3/Qark5)
 
 
 
