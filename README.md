@@ -1,5 +1,5 @@
-# QARK5 - Quick Android Review Kit
-[![Android Logo](https://raw.githubusercontent.com/google/material-design-icons/master/src/action/android/2x_web/ic_android_48dp.png)](https://github.com/DaoudAbuMadi3/Qark5)
+# QARK5 - Quick Android Review Kit 🛡️
+[![QARK5 Logo](https://user-images.githubusercontent.com/46517096/166974368-9798f39f-1f46-499c-b14e-81f0a3f83a06.png)](https://github.com/DaoudAbuMadi3/Qark5)
 
 [![GitHub Stars](https://img.shields.io/github/stars/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/network/members)
@@ -14,7 +14,6 @@
 
 ## Table of Contents
 - [About the Project](#about-the-project)
-- [System Architecture](#system-architecture)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Features](#features)
@@ -29,24 +28,16 @@
 ## About the Project
 [![QARK5 Architecture](https://capsule-render.vercel.app/api?text=QARK5%20Architecture&animation=fadeIn&type=waving&color=gradient&height=100)](https://github.com/DaoudAbuMadi3/Qark5)
 
-QARK5 هو نسخة محسنة من Quick Android Review Kit، مصممة لتحديد نقاط الضعف الأمنية في تطبيقات Android. هذه الأداة تحلل كل من الكود المصدري والتطبيقات المجمعة (APK)، وتقوم بإنشاء أدوات إثبات الضعف (PoC) قابلة للتنفيذ و/أو أوامر ADB. على عكس الأدوات الأمنية التقليدية، تعمل QARK5 على الأجهزة غير المروطة، مع التركيز على نقاط الضعف التي يمكن استغلالها في ظروف طبيعية.
-
-## System Architecture
-
-
-
-يوضح المخطط المكونات الرئيسية للنظام:
-
-
+🌟 QARK5 هو نسخة محسنة من Quick Android Review Kit، مصممة لتحديد نقاط الضعف الأمنية في تطبيقات Android. هذه الأداة تحلل كل من الكود المصدري والتطبيقات المجمعة (APK)، وتقوم بإنشاء أدوات إثبات الضعف (PoC) قابلة للتنفيذ و/أو أوامر ADB. على عكس الأدوات الأمنية التقليدية، تعمل QARK5 على الأجهزة غير المروطة، مع التركيز على نقاط الضعف التي يمكن استغلالها في ظروف طبيعية. 🚀
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
-* Python 3.11
-* Linux or Windows operating system
-* Virtual environment
-* Jadx decompiler (version 1.5.1)
+🔧 Python 3.11
+🖥️ Linux or Windows operating system
+📦 Virtual environment
+🔍 Jadx decompiler (version 1.5.1)
 
 ### Installation
 #### Linux Installation
@@ -106,28 +97,28 @@ qark --analyze
 ```
 
 ## Features
-* Analyzes both APK files and Java source code
-* Creates deployable PoC APKs and ADB commands
-* Works on unrooted devices
-* Free and open-source
-* Educational focus with detailed vulnerability explanations
-* Automates multiple decompilers for superior results
-* Generates HTML and CSV reports
+🌟 Analyzes both APK files and Java source code
+🎯 Creates deployable PoC APKs and ADB commands
+📱 Works on unrooted devices
+🎯 Free and open-source
+📚 Educational focus with detailed vulnerability explanations
+🔍 Automates multiple decompilers for superior results
+📊 Generates HTML and CSV reports
 
 ## Requirements
-* Python 3.11
-* Linux or Windows operating system
-* Virtual environment
-* Jadx decompiler (version 1.5.1)
+🔧 Python 3.11
+🖥️ Linux or Windows operating system
+📦 Virtual environment
+🔍 Jadx decompiler (version 1.5.1)
 
 ## Installation
 [Installation instructions are above](#installation)
 
 ## Results
-A report is generated in HTML and CSV format, which can be selected through the `--report-type` flag.
+📊 A report is generated in HTML and CSV format, which can be selected through the `--report-type` flag.
 
 ## Exploit APK
-QARK can generate a basic exploit APK for a few of the vulnerabilities that have been found.
+🎯 QARK can generate a basic exploit APK for a few of the vulnerabilities that have been found.
 
 To generate the exploit APK there are a few steps to follow. You need to have the Android SDK v21 and build-tools v21.1.2
 
@@ -138,7 +129,7 @@ To generate the exploit APK there are a few steps to follow. You need to have th
 5. Install the SDK and the proper build-tools version: `bin/sdkmanager --install "platforms;android-21" "sources;android-21" "build-tools;21.1.2"`
 
 ## Checks
-QARK is an easy to use tool capable of finding common security vulnerabilities in Android applications. Unlike commercial products, it is 100% free to use. QARK features educational information allowing security reviewers to locate precise, in-depth explanations of the vulnerabilities. QARK automates the use of multiple decompilers, leveraging their combined outputs, to produce superior results, when decompiling APKs. Finally, the major advantage QARK has over traditional tools, that just point you to possible vulnerabilities, is that it can produce ADB commands, or even fully functional APKs, that turn hypothetical vulnerabilities into working "POC" exploits.
+🔍 QARK is an easy to use tool capable of finding common security vulnerabilities in Android applications. Unlike commercial products, it is 100% free to use. QARK features educational information allowing security reviewers to locate precise, in-depth explanations of the vulnerabilities. QARK automates the use of multiple decompilers, leveraging their combined outputs, to produce superior results, when decompiling APKs. Finally, the major advantage QARK has over traditional tools, that just point you to possible vulnerabilities, is that it can produce ADB commands, or even fully functional APKs, that turn hypothetical vulnerabilities into working "POC" exploits.
 
 Included in the types of security vulnerabilities this tool attempts to find are:
 
@@ -161,16 +152,16 @@ Included in the types of security vulnerabilities this tool attempts to find are
 - Apps supporting outdated API versions, with known vulnerabilities
 
 ## Notice
-Note: QARK decompiles Android applications back to raw source code. Please do not use this tool if this may be considered illegal in your jurisdiction. If you are unsure, seek legal counsel.
+⚠️ Note: QARK decompiles Android applications back to raw source code. Please do not use this tool if this may be considered illegal in your jurisdiction. If you are unsure, seek legal counsel.
 
 If you run into issues on OSX, especially relating to the outbound call to the Play Store, or the downloading of the SDK, it is
 likely due to your Python/OpenSSL configuration and the fact that recent changes in OSX impacted Python installed via brew. Nuking your
 Python installation(s) and re-installing from source may fix your issues.
 
 ## License
-Copyright 2015 LinkedIn Corp.  All rights reserved.
+📜 Copyright 2015 LinkedIn Corp.  All rights reserved.
 
-Copyright 2015 LinkedIn Corp. Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. 
+📜 Copyright 2015 LinkedIn Corp. Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. 
 You may obtain a copy of the License `here <http://www.apache.org/licenses/LICENSE-2.0/>`_.
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
