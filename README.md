@@ -32,8 +32,11 @@
 ## About the Project
 [![QARK5 Architecture](https://capsule-render.vercel.app/api?text=QARK5%20Architecture&animation=fadeIn&type=waving&color=gradient&height=100)](https://github.com/DaoudAbuMadi3/Qark5)
 
-🌟 QARK5 هو نسخة محسنة من Quick Android Review Kit، مصممة لتحديد نقاط الضعف الأمنية في تطبيقات Android. هذه الأداة تحلل كل من الكود المصدري والتطبيقات المجمعة (APK)، وتقوم بإنشاء أدوات إثبات الضعف (PoC) قابلة للتنفيذ و/أو أوامر ADB. على عكس الأدوات الأمنية التقليدية، تعمل QARK5 على الأجهزة غير المروطة، مع التركيز على نقاط الضعف التي يمكن استغلالها في ظروف طبيعية. 🚀
+🌟 QARK5 is an enhanced version of the Quick Android Review Kit, designed to identify security vulnerabilities in Android applications. This tool analyzes both source code and compiled applications (APKs), generating executable Proof-of-Crisis (PoC) tools and/or ADB commands. Unlike traditional security tools, QARK5 runs on unrooted devices, focusing on vulnerabilities that can be exploited under normal conditions. 🚀
 
+
+[![QARK5 - Mobile Pentesting Tool](https://github.com/DaoudAbuMadi3/Qark5/blob/main/docs/System_Arch.png
+)](https://github.com/DaoudAbuMadi3/Qark5)
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
 
