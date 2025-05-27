@@ -1,5 +1,4 @@
 # QARK5 - Quick Android Review Kit 🛡️
-[![QARK5 Logo](https://user-images.githubusercontent.com/46517096/166974368-9798f39f-1f46-499c-b14e-81f0a3f83a06.png)](https://github.com/DaoudAbuMadi3/Qark5)
 
 [![GitHub Stars](https://img.shields.io/github/stars/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/network/members)
