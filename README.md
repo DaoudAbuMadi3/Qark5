@@ -1,11 +1,11 @@
 # QARK5 - Quick Android Review Kit 🛡️
 
-[![QARK5 - Mobile Pentesting](https://user-images.githubusercontent.com/46517096/177012345-f7a1e8d4-0c47-4c3c-bf92-3a3f908c5477.png)](https://github.com/DaoudAbuMadi3/Qark5)
+[[[![QARK5 - Mobile Pentesting](https://user-images.githubusercontent.com/46517096/177012345-f7a1e8d4-0c47-4c3c-bf92-3a3f908c5477.png)](https://github.com/DaoudAbuMadi3/Qark5)
 
 # QARK5 - Mobile Pentesting Tool 🔒📱
 
 **Powerful, Open-Source Mobile Application Vulnerability Scanner**  
-Scan, analyze, and exploit Android apps with ease.
+Scan, analyze, and exploit Android apps with ease.](https://github.com/DaoudAbuMadi3/Qark5/blob/main/docs/qark_diagram.png)](https://github.com/DaoudAbuMadi3/Qark5/blob/main/docs/QARK5-Green-Logo.svg)
 
 [![GitHub Stars](https://img.shields.io/github/stars/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/DaoudAbuMadi3/Qark5?style=social)](https://github.com/DaoudAbuMadi3/Qark5/network/members)
