@@ -40,6 +40,15 @@
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
 
+## Requirements
+
+🔧 Python 3.11
+
+🖥️ Linux or Windows operating system
+
+📦 Virtual environment
+
+🔍 Jadx decompiler (version 1.5.1)
 
 
 ## Installation
@@ -108,11 +117,7 @@ qark --analyze
 🔍 Automates multiple decompilers for superior results
 📊 Generates HTML and CSV reports
 
-## Requirements
-🔧 Python 3.11
-🖥️ Linux or Windows operating system
-📦 Virtual environment
-🔍 Jadx decompiler (version 1.5.1)
+
 
 ## Installation
 [Installation instructions are above](#installation)
