@@ -9,14 +9,31 @@ from qark.utils import create_directories_to_path
 
 import logging
 
-# تحديد المسار للتقرير - يعمل على Windows و Linux
-# البحث عن مجلد Qark5 في Desktop للمستخدم الحالي
-user_home = os.path.expanduser("~")
-desktop_path = os.path.join(user_home, "OneDrive", "Desktop")  # Windows
-if not os.path.exists(desktop_path):
-    desktop_path = os.path.join(user_home, "Desktop")  # Linux/Mac
+# تحديد المسار للتقرير نسبة لمجلد Qark5
+# البحث عن مجلد Qark5 في المسار الحالي أو المجلدات الأعلى
+current_dir = os.getcwd()
+qark5_path = None
 
-DEFAULT_REPORT_PATH = os.path.join(desktop_path, "Qark5", "qark", "report")
+# البحث عن مجلد Qark5 في المجلد الحالي
+if os.path.basename(current_dir) == 'Qark5':
+    qark5_path = current_dir
+else:
+    # البحث في المجلد الحالي
+    potential_path = os.path.join(current_dir, 'Qark5')
+    if os.path.exists(potential_path):
+        qark5_path = potential_path
+    else:
+        # البحث في المجلد الأب
+        parent_dir = os.path.dirname(current_dir)
+        potential_path = os.path.join(parent_dir, 'Qark5')
+        if os.path.exists(potential_path):
+            qark5_path = potential_path
+
+# إذا وُجد مجلد Qark5، استخدمه، وإلا استخدم المجلد الحالي
+if qark5_path:
+    DEFAULT_REPORT_PATH = os.path.join(qark5_path, "qark", "report")
+else:
+    DEFAULT_REPORT_PATH = os.path.join("qark", "report")
  
 jinja_env = Environment(
     loader=PackageLoader('qark', 'templates'),
