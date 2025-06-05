@@ -110,7 +110,11 @@ qark --analyze
 📊 Generates HTML and CSV reports
 
 
+## 🙌 Thanks to my colleagues
 
+- [@username1](https://github.com/username1)
+- [@username2](https://github.com/username2)
+- [@username3](https://github.com/username3)
 
 ## Results
 📊 A report is generated in HTML and CSV format, which can be selected through the `--report-type` flag.
