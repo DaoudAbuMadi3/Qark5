@@ -45,23 +45,27 @@ These instructions will get you a copy of the project up and running on your loc
 [Installation ](#installation)
 
 ### Linux Installation
-```bash
+
 # Create and activate virtual environment
+```bash
 python3 -m venv env1
 source env1/bin/activate
-
+```
 # Clone the repository
+```bash
 git clone https://github.com/DaoudAbuMadi3/Qark5.git
-
+```
 # Download jadx
+```bash
 cd Qark5/qark/lib
 wget https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
 mkdir jadx-1.5.1
 mv jadx-1.5.1.zip jadx-1.5.1
 cd jadx-1.5.1
 unzip jadx-1.5.1.zip
-
+```
 # Install requirements
+```bash
 cd ../../..
 pip install -r requirements.txt
 pip install .
