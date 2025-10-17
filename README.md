@@ -63,57 +63,65 @@ sudo docker compose down
 ```
 
 
+---
 
-Open http://localhost:3000
+## Using QARK v6 🚀
 
-Upload a test APK
+### 1️⃣ Access the Application
 
-Click "Start Scan"
+Open your browser and go to:
 
-Monitor progress and view results
+```
+http://localhost:3000
+```
 
+### 2️⃣ Upload and Scan
 
-Decompilation Tools Included 🛠️
-APKTool (backend/qark/lib/apktool/apktool.jar)
+1. Upload a test `.apk` file.
+2. Click **Start Scan**.
+3. Monitor progress and view detailed results.
 
-CFR (backend/qark/lib/cfr.jar)
+---
 
-Procyon (backend/qark/lib/procyon.jar)
+## Decompilation Tools Included 🛠️
 
-JADX (backend/qark/lib/jadx-1.5.0/)
+All decompilation tools are included—**no additional downloads required**:
 
-Dex2jar (backend/qark/lib/dex2jar/)
+* **APKTool** - `backend/qark/lib/apktool/apktool.jar`
+* **CFR** - `backend/qark/lib/cfr.jar`
+* **Procyon** - `backend/qark/lib/procyon.jar`
+* **JADX** - `backend/qark/lib/jadx-1.5.0/`
+* **Dex2jar** - `backend/qark/lib/dex2jar/`
 
-No additional downloads required.
+---
 
-Supported File Types 📂
-.apk - Android Application Package
+## Supported File Types 📂
 
-.java - Java source files
+* `.apk` - Android Application Package
+* `.java` - Java source files
+* `.jar` - Java Archive files
 
-.jar - Java Archive files
+---
 
-Detected Vulnerabilities 🛡️
-QARK v6 detects 40+ types of vulnerabilities, including:
+## Detected Vulnerabilities 🛡️
 
-Certificate & SSL issues
+QARK v6 detects **40+ types of vulnerabilities**, including:
 
-Cryptography weaknesses
+* Certificate & SSL issues
+* Cryptography weaknesses
+* File handling vulnerabilities
+* Intent & broadcast issues
+* Manifest misconfigurations
+* WebView security issues
+* Generic security problems
 
-File handling vulnerabilities
+> For the full list, see [README_QARK.md](README_QARK.md)
 
-Intent & broadcast issues
+---
 
-Manifest misconfigurations
+## Project Structure 📁
 
-WebView security issues
-
-Generic security problems
-
-For the full list, see README_QARK.md
-
-Project Structure 📁
-Copy code
+```
 qark-v6/
 ├── backend/
 ├── frontend/
@@ -123,20 +131,33 @@ qark-v6/
 ├── SETUP.md
 ├── USER_GUIDE.md
 └── PLUGINS_ENHANCEMENT.md
-Team 👨‍💻
-LinkedIn Team - Original QARK project
+```
 
-Daoud Abu Madi - Updated & Maintained QARK v6
+---
 
-License 📜
+## Team 👨‍💻
+
+* **LinkedIn Team** - Original QARK project
+* **Daoud Abu Madi** - Updated & Maintained QARK v6
+
+---
+
+## License 📜
+
 MIT License - Open Source
 
-Support & Contributing 🤝
-Open a GitHub issue
+---
 
-Fork & create a feature branch
+## Support & Contributing 🤝
 
-Submit Pull Requests
+* Open a GitHub issue
+* Fork & create a feature branch
+* Submit Pull Requests
 
-QARK v6 - Making Android Security Testing Accessible
-Made with ❤️ by Daoud Abu Madi
+---
+
+**QARK v6 - Making Android Security Testing Accessible**
+Made with ❤️ by **Daoud Abu Madi**
+
+---
+
