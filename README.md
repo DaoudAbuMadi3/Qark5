@@ -1,265 +1,176 @@
-# QARK v5 - Quick Android Review Kit
+[![Quick Android Review Kit 🛡️](https://capsule-render.vercel.app/api?text=Quick%20Android%20Review%20Kit&animation=fadeIn&type=waving&color=gradient&height=100)](https://github.com/DaoudAbuMadi3/Qark5)
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Version-5.0-blue" alt="Version">
-  <img src="https://img.shields.io/badge/Platform-Android-green" alt="Platform">
-  <img src="https://img.shields.io/badge/Language-Python-yellow" alt="Language">
-  <img src="https://img.shields.io/badge/Web-React-cyan" alt="Web">
-</div>
 
-## 📋 Overview
 
-QARK v5 is an advanced tool for scanning security vulnerabilities in Android applications. The tool features a modern and attractive web interface that facilitates the scanning process and provides detailed and accurate results.
 
-### ✨ Key Features
 
-- 🔍 **Comprehensive Scanning**: Detection of more than 40 types of security vulnerabilities
-- 🎨 **Beautiful Web Interface**: Modern and easy-to-use design
-- 📊 **Detailed Reports**: Reports in multiple formats (HTML, JSON, XML, CSV)
-- 🚀 **High Performance**: Fast and accurate file processing
-- 🔄 **Live Tracking**: Real-time scan progress monitoring
-- 📁 **Scan Management**: Save and manage all previous scan operations
 
-### 🎯 Types of Detected Vulnerabilities
+About the Project 
+===========================
+🌟 QARK5 is an enhanced version of the Quick Android Review Kit, designed to identify security vulnerabilities in Android applications. This tool analyzes both source code and compiled applications (APKs), generating executable Proof-of-Crisis (PoC) tools and/or ADB commands. Unlike traditional security tools, QARK5 runs on unrooted devices, focusing on vulnerabilities that can be exploited under normal conditions. 🚀
 
-#### Certificate & SSL
-- Certificate Validation Methods Overridden
-- Hostname Verifier Issues
-- SSL/TLS Configuration Problems
 
-#### Cryptography
-- ECB Cipher Usage
-- RSA Cipher Issues
-- Packaged Private Keys
-- Secure Random Seed Issues
+[![QARK5 - Mobile Pentesting Tool](https://github.com/DaoudAbuMadi3/Qark5/blob/main/docs/System_Arch.png
+)](https://github.com/DaoudAbuMadi3/Qark5)
 
-#### File Handling
-- External Storage Access
-- File Permissions Issues
-- Android Logging Vulnerabilities
-- API Keys Exposure
-- Phone Identifier Leaks
-- Insecure Functions Usage
-- Hardcoded HTTP URLs
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Results](#results)
+- [Exploit APK](#exploit-apk)
+- [Checks](#checks)
+- [Notice](#notice)
+- [License](#license)
 
-#### Intent & Broadcast
-- Implicit Intent to Pending Intent
-- Dynamic Broadcast Receiver Issues
-- Broadcast Receiver Permission Problems
 
-#### Manifest Issues
-- Debuggable Flag
-- Exported Components
-- Allow Backup Configuration
-- Minimum SDK Issues
-- Custom Permissions
-- Task Reparenting
-- Single Task Launch Mode
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine.
 
-#### WebView Vulnerabilities
-- JavaScript Interface Issues
-- JavaScript Enabled
-- Remote WebView Debugging
-- DOM Storage Issues
-- File Access Configuration
-- Universal Access from File URLs
-- Load Data with Base URL
+## Requirements
 
-#### Generic Issues
-- Permissions Check
-- Task Affinity Issues
+🔧 Python 3.11
 
-## 🛠️ Technologies Used
+🖥️ Linux or Windows operating system
 
-### Backend
-- **FastAPI**: Fast and modern Python framework
-- **Python 3.x**: Primary programming language
-- **MongoDB**: Database for storage
-- **QARK Engine**: Core scanning engine
+📦 Virtual environment
 
-### Frontend
-- **React**: JavaScript library for building user interfaces
-- **Tailwind CSS**: CSS framework for design
-- **Radix UI**: Advanced UI components
-- **Axios**: For Backend API communication
+🔍 Jadx decompiler (version 1.5.1)
 
-### Decompilation Tools
-- **JADX**: Primary APK decompilation tool
-- **apktool**: For extracting resources and AndroidManifest
-- **dex2jar**: Converting DEX files to JAR
-- **CFR & Procyon**: Fallback decompilation tools
 
-## 📦 Installation and Setup
+## Installation  
+[Installation ](#installation)
 
-### Prerequisites
+### Linux Installation
 
-- Python 3.8+
-- Node.js 16+
-- MongoDB
-- Java 8+ (for running decompilation tools)
-
-### Installation Steps
-
-#### 1. Backend Setup
-
+# Create and activate virtual environment
 ```bash
-cd backend
-
-# Install required libraries
+python3 -m venv env1
+source env1/bin/activate
+```
+# Clone the repository
+```bash
+git clone https://github.com/DaoudAbuMadi3/Qark5.git
+```
+# Download jadx
+```bash
+cd Qark5/qark/lib
+wget https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
+mkdir jadx-1.5.1
+mv jadx-1.5.1.zip jadx-1.5.1
+cd jadx-1.5.1
+unzip jadx-1.5.1.zip
+```
+# Install requirements
+```bash
+cd ../../..
 pip install -r requirements.txt
-
-# Setup environment variables
-cp .env.example .env
-# Edit the .env file according to your settings
-
-# Run the server
-python -m uvicorn server:app --host 0.0.0.0 --port 8001 --reload
+pip install .
 ```
 
-#### 2. Frontend Setup
-
+### Windows Installation
 ```bash
-cd frontend
+# Set encoding in PowerShell
+chcp 65001
+$OutputEncoding = [System.Text.UTF8Encoding]::new()
 
-# Install libraries
-yarn install
+# Create and activate virtual environment
+python3 -m venv env1
+./env1/Scripts/Activate.ps1
 
-# Run the application
-yarn start
+# Clone the repository
+git clone https://github.com/DaoudAbuMadi3/Qark5.git
+
+# Download jadx
+cd Qark5/qark/lib
+# Download jadx-1.5.1.zip from https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip
+# Extract it to this directory
+
+# Install requirements
+cd ../../..
+pip install -r requirements.txt
+pip install .
 ```
 
-#### 3. JADX Setup
+## Usage
+```bash
+# Static Analysis
+qark --analyze
 
-Download JADX from: https://github.com/skylot/jadx/releases
-
-Then place JADX files in the directory:
-```
-backend/qark/lib/jadx/
-```
-
-## 🚀 Usage
-
-### 1. Main Interface
-
-- Open browser at `http://localhost:3000`
-- Upload an APK or Java file
-- Wait for the scan to complete
-
-### 2. Scan Monitoring
-
-- You will be automatically redirected to the scan monitoring page
-- Monitor progress in real-time
-- View results immediately upon completion
-
-### 3. Results and Reports
-
-- View vulnerabilities classified by severity
-- Download reports in different formats
-- Browse details of each vulnerability
-
-### 4. Scan History
-
-- View all previous scan operations
-- Reopen any previous scan
-- Delete old scans
-
-## 📊 API Endpoints
-
-### Scan Management
-
-```
-POST   /api/qark/scan                    # Upload file and start scan
-GET    /api/qark/scan/{scan_id}/status   # Get scan status
-GET    /api/qark/scan/{scan_id}/result   # Get scan results
-GET    /api/qark/scans                   # View all scans
-DELETE /api/qark/scan/{scan_id}          # Delete scan
-GET    /api/qark/scan/{scan_id}/report/{type}  # Download report
+# Select file type (.apk or .java)
+# Enter absolute file path
 ```
 
-## 🎨 Screenshots
+## Features
+🌟 Analyzes both APK files and Java source code
+🎯 Creates deployable PoC APKs and ADB commands
+📱 Works on unrooted devices
+🎯 Free and open-source
+📚 Educational focus with detailed vulnerability explanations
+🔍 Automates multiple decompilers for superior results
+📊 Generates HTML and CSV reports
 
-### Home Page
-Attractive interface for uploading files with Drag & Drop
 
-### Scan Page
-Live progress tracking with detailed results display
+## 🙌 Thanks to my colleagues
 
-### Reports
-Enhanced HTML reports with professional design
+- [@username1](https://github.com/username1)
+- [@username2](https://github.com/username2)
+- [@username3](https://github.com/username3)
 
-## 🔒 Security
+## Results
+📊 A report is generated in HTML and CSV format, which can be selected through the `--report-type` flag.
 
-- All uploaded files are stored temporarily
-- No data is shared with external parties
-- All data can be deleted after scanning
+## Exploit APK
+🎯 QARK can generate a basic exploit APK for a few of the vulnerabilities that have been found.
 
-## 📝 Development
+To generate the exploit APK there are a few steps to follow. You need to have the Android SDK v21 and build-tools v21.1.2
 
-### Project Structure
+1. Install the android SDK, you can get it under the 'command line tools': https://developer.android.com/studio/#downloads
+2. Unzip the android SDK
+3. Go into the new directory and generate the licenses with `bin/sdkmanager --licenses`
+4. Make sure the generated licenses are in the android SDK directory.
+5. Install the SDK and the proper build-tools version: `bin/sdkmanager --install "platforms;android-21" "sources;android-21" "build-tools;21.1.2"`
 
-```
-.
-├── backend/
-│   ├── qark/                 # QARK engine
-│   │   ├── decompiler/      # Decompilation tools
-│   │   ├── scanner/         # Scan engine
-│   │   ├── plugins/         # Vulnerability detection components
-│   │   ├── templates/       # Report templates
-│   │   └── lib/            # External libraries
-│   ├── server.py           # FastAPI server
-│   └── qark_api.py         # QARK API wrapper
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/          # Application pages
-│   │   ├── components/     # React components
-│   │   └── App.js          # Main application
-│   └── package.json
-│
-└── README.md
-```
+## Checks
+🔍 QARK is an easy to use tool capable of finding common security vulnerabilities in Android applications. Unlike commercial products, it is 100% free to use. QARK features educational information allowing security reviewers to locate precise, in-depth explanations of the vulnerabilities. QARK automates the use of multiple decompilers, leveraging their combined outputs, to produce superior results, when decompiling APKs. Finally, the major advantage QARK has over traditional tools, that just point you to possible vulnerabilities, is that it can produce ADB commands, or even fully functional APKs, that turn hypothetical vulnerabilities into working "POC" exploits.
 
-### Contributing
+Included in the types of security vulnerabilities this tool attempts to find are:
 
-We welcome all contributions! Please:
+- Inadvertently exported components
+- Improperly protected exported components
+- Intents which are vulnerable to interception or eavesdropping
+- Improper x.509 certificate validation
+- Creation of world-readable or world-writeable files
+- Activities which may leak data
+- The use of Sticky Intents
+- Insecurely created Pending Intents
+- Sending of insecure Broadcast Intents
+- Private keys embedded in the source
+- Weak or improper cryptography use
+- Potentially exploitable WebView configurations
+- Exported Preference Activities
+- Tapjacking
+- Apps which enable backups
+- Apps which are debuggable
+- Apps supporting outdated API versions, with known vulnerabilities
 
-1. Fork the project
-2. Create a branch for the new feature
-3. Commit changes
-4. Push to Branch
-5. Open Pull Request
+## Notice
+⚠️ Note: QARK decompiles Android applications back to raw source code. Please do not use this tool if this may be considered illegal in your jurisdiction. If you are unsure, seek legal counsel.
 
-## 👥 Team
+If you run into issues on OSX, especially relating to the outbound call to the Play Store, or the downloading of the SDK, it is
+likely due to your Python/OpenSSL configuration and the fact that recent changes in OSX impacted Python installed via brew. Nuking your
+Python installation(s) and re-installing from source may fix your issues.
 
-QARK v5 was developed by:
+## License
+📜 Copyright 2015 LinkedIn Corp.  All rights reserved.
 
-- **Jineen Abu Amr**
-- **Daoud Abu Madi**
-- **3asem Alselwady**
-- **R7mah Alqur3an**
-
-## 📄 License
-
-This project is open source and available under the MIT license.
-
-## 🤝 Support
-
-For support or to report issues:
-- Open an Issue on GitHub
-- Contact the team
-
-## 🔄 Upcoming Updates
-
-- [ ] Support for more file types
-- [ ] Scan performance improvements
-- [ ] Adding more vulnerability types
-- [ ] Multi-language support
-- [ ] Advanced PDF reports
-- [ ] Developer API
+📜 Copyright 2015 LinkedIn Corp. Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. 
+You may obtain a copy of the License `here <http://www.apache.org/licenses/LICENSE-2.0/>`_.
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 ---
 
-<div align="center">
-  <p>Made with ❤️ by QARK Team</p>
-  <p>QARK v5 - Quick Android Review Kit</p>
-</div>
+
