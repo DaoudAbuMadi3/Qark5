@@ -48,8 +48,8 @@ cd qark-v6
 2️⃣ Build and Start Containers
 ```
 sudo docker compose up -d --build
-This starts both backend and frontend automatically.
 ```
+This starts both backend and frontend automatically.
 
 3️⃣ Access the Application
 Open your browser and navigate to:
